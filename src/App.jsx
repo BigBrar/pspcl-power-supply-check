@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
 
 
@@ -6,61 +6,73 @@ import './App.css';
 
 function App() {
 
-  const districts = [
-    {id: 0,name:'Sri Muktsar Sahib'}, 
-    {id: 1,name:'Amritsar'},
-    {id: 2,name:'Barnala'},
-    {id: 3,name:'Kapurthala'},
-    {id: 4,name:'Ludhiana'},
-    {id: 5,name:'Malerkotla'},
-    {id: 6,name:'Mansa'},
-    {id: 7,name:'Moga'},
-    {id: 8,name:'Mohali'},
-    {id: 9,name:'Pathankot'},
-    {id: 10,name:'Patiala'},
-    {id: 11,name:'Rupnagar'},
-    {id: 12,name:'Sangrur'},
-    {id: 13,name:'Bathinda'},
-    {id: 14,name:'SBS Nagar'},
-    {id: 15,name:'Tarn Taran Sahib'},
-    {id: 16,name:'Faridkot'},
-    {id: 17,name:'Fatehgarh Sahib'},
-    {id: 18,name:'Fazilka'},
-    {id: 19,name:'Ferozpur'},
-    {id: 20,name:'Gurdaspur'},
-    {id: 21,name:'Hoshiarpur'},
-    {id:22, name:'Jalandhar'}
-  ]
+const [districts, setDistricts] = useState([])
+const [divisions, setDivisions] = useState([])
+const [subdivisions, setSubDivisions] = useState([])
+const [supplyStatus, setSupplyStatus] = useState([])
 
-const divisions = 
-  {0:[
-    {id: 0, name:'DS DIVN. Malout'}, 
-    {id: 1, name:'DS DIVN. Faridkot'}, 
-    {id: 2, name:'DS DIVN. Abohar'}, 
-    {id: 3, name:'DS DIVN. Badal'}, 
-    {id: 4, name:'DS DIVN. Giddarbaha'}, 
-    {id: 5, name:'DS DIVN. Kotkapura'}, 
-    {id: 6, name:'DS DIVN. Muktsar'}, 
-    {id: 7, name:'DS DIVN. Bathinda'}
-  ]}
-
-const subDivisions = {
-  0:[
-
-  ]
+const fetchDistricts = async()=>{
+  axios.get('http://127.0.0.1:5000/').then(response =>{
+    console.log(response.data);
+    setDistricts(response.data)
+    setDivisions(null)
+    setSubDivisions(null)
+    setSupplyStatus(null)
+  })
+  .catch(error=>{
+    console.error('Error fetching districts:', error);
+    
+  })
 }
 
-const [selectedDivision, setSelectedDivision] = useState(null)
-
   
-  const manageDivisions = (districtId)=>{
+  const getData = (mode, districtId)=>{
+    console.log('sending /divisions request');
+    let url;
+    if (mode == 'div'){
+      url = 'http://127.0.0.1:5000/divisions'
+      setSubDivisions(null)
+      setSupplyStatus(null)
+    }else if (mode == 'subdiv'){
+      url = 'http://127.0.0.1:5000/subdivisions'
+      // setDivisions(null)
+      setSubDivisions(null)
+    }else if (mode == 'supply'){
+      url = 'http://127.0.1:5000/check_supply'
+    }
     
     // setSelectedDivision(divisions[districtId])
-    setSelectedDivision(districtId)
-    console.log(divisions[districtId])
+    axios.get(url,{
+      params:{
+            id:districtId
+      }
+    }).then(response =>{
+    console.log(response.data);
+    if (mode == 'div'){
+    setDivisions(response.data)}
+    else if (mode == 'subdiv'){
+      setSubDivisions(response.data)
+    }else if (mode == 'supply'){
+      const parsed = JSON.parse(response.data);
+      console.log(typeof(parsed))
+      console.log('supply status:', parsed[0]);
+      setSupplyStatus(parsed[0])
+        
+        
+    }
+    // console.log('type of data received:', response.data['response']);
+    
+  })
+  .catch(error=>{
+    console.error('Error fetching districts:', error);
+    
+  })
   }
 
-
+useEffect(()=>{
+  fetchDistricts()
+}
+,[])
 
   return (
     <>
@@ -72,24 +84,14 @@ const [selectedDivision, setSelectedDivision] = useState(null)
 
     <div>
 
+
+    {/* SELECTING DISTRICT */}
     <div className='justify-center flex flex-col items-center'>
       
       <h2 className='gap-4 text-xl m-3 font-bold'> Select District</h2>
-      <select onChange={(e)=>manageDivisions(e.target.value)} name="district" id="district">
+      <select onChange={(e)=>getData('div',e.target.value)} name="district" id="district">
         <option value="" disabled selected>Select your district</option>
-        {districts.map((district, index) => (
-          <option key={index} value={district.id}>{district.name}</option>
-        ))}
-      </select>
-
-    </div>
-
-    <div className='justify-center flex flex-col items-center'>
-      
-      <h2 className='gap-4 text-xl m-3 font-bold'> Select District</h2>
-      <select onChange={(e)=>manageDivisions(e.target.value)} name="district" id="district">
-        <option value="" disabled selected>Select your district</option>
-        {selectedDivision && divisions[selectedDivision].map((district, index) => (
+        {districts && districts.map((district, index) => (
           <option key={index} value={district.id}>{district.name}</option>
         ))}
       </select>
@@ -97,7 +99,46 @@ const [selectedDivision, setSelectedDivision] = useState(null)
     </div>
 
 
+    {/* SELECTING DIVISION */}
+    <div className='justify-center flex flex-col items-center'>
+      
+      <h2 className='gap-4 text-xl m-3 font-bold'> Select Division</h2>
+      <select onChange={(e)=>getData('subdiv',e.target.value)} name="division" id="division">
+        <option value="" disabled selected>Select your division</option>
+        {divisions && divisions.map((district, index) => (
+          <option key={index} value={district.id}>{district.name}</option>
+        ))}
+      </select>
+
+    </div>
+
+
+
+    {/* SELECTING SUBDIVISION */}
+    <div className='justify-center flex flex-col items-center'>
+      
+      <h2 className='gap-4 text-xl m-3 font-bold'> Select Subdivision</h2>
+      <select onChange={(e)=>getData('supply',e.target.value)} name="subdivision" id="subdivision">
+        <option value="" disabled selected>Select your subdivision</option>
+        {subdivisions && subdivisions.map((district, index) => (
+          <option key={index} value={district.id}>{district.name}</option>
+        ))}
+      </select>
+
+    </div>
+
+
+    {/* SUPPLY STATUS */}
     
+    <div className='justify-center flex flex-col items-center'>
+      
+      <h2 className='gap-4 text-xl m-3 font-bold'> Supply status</h2>
+      
+      {supplyStatus && supplyStatus.status && (
+        <p>Everything is working fine, supply is there.</p>
+      )}
+
+    </div>
 
     </div>
 
