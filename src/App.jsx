@@ -1,12 +1,15 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import axios from 'axios';
 
 
 import './App.css';
+import District from '../components/District';
+import Division from '../components/Division';
+import SubDivision from '../components/SubDivision';
 
 function App() {
 
-const [districts, setDistricts] = useState([])
+
 const [divisions, setDivisions] = useState([])
 const [subdivisions, setSubDivisions] = useState([])
 const [supplyStatus, setSupplyStatus] = useState([])
@@ -14,19 +17,7 @@ const [isLoading, setIsLoading] = useState(false)
 const divisionRef = useRef(null)
 const subdivisionRef = useRef(null)
 
-const fetchDistricts = async()=>{
-  axios.get('http://127.0.0.1:5000/').then(response =>{
-    console.log(response.data);
-    setDistricts(response.data)
-    setDivisions(null)
-    setSubDivisions(null)
-    setSupplyStatus(null)
-  })
-  .catch(error=>{
-    console.error('Error fetching districts:', error);
-    
-  })
-}
+
 
   
   const getData = (mode, districtId)=>{
@@ -84,10 +75,6 @@ const fetchDistricts = async()=>{
   })
   }
 
-useEffect(()=>{
-  fetchDistricts()
-}
-,[])
 
   return (
     <>
@@ -101,46 +88,16 @@ useEffect(()=>{
 
 
     {/* SELECTING DISTRICT */}
-    <div className='justify-center flex flex-col items-center'>
-      
-      <h2 className='gap-4 text-xl m-3 font-bold'> Select District</h2>
-      <select onChange={(e)=>getData('div',e.target.value)} name="district" id="district">
-        <option value="" disabled selected>Select your district</option>
-        {districts && districts.map((district, index) => (
-          <option key={index} value={district.id}>{district.name}</option>
-        ))}
-      </select>
-
-    </div>
+    <District setDivisions={setDivisions} setSubDivisions={setSubDivisions} setSupplyStatus={setSupplyStatus} getData={getData}/>
 
 
     {/* SELECTING DIVISION */}
-    <div className='justify-center flex flex-col items-center'>
-      
-      <h2 className='gap-4 text-xl m-3 font-bold'> Select Division</h2>
-      <select ref={divisionRef} onChange={(e)=>getData('subdiv',e.target.value)} name="division" id="division">
-        <option value="" disabled selected>Select your division</option>
-        {divisions && divisions.map((district, index) => (
-          <option key={index} value={district.id}>{district.name}</option>
-        ))}
-      </select>
-
-    </div>
+    <Division getData={getData} divisionRef={divisionRef} divisions={divisions}/>
 
 
 
     {/* SELECTING SUBDIVISION */}
-    <div className='justify-center flex flex-col items-center'>
-      
-      <h2 className='gap-4 text-xl m-3 font-bold'> Select Subdivision</h2>
-      <select ref={subdivisionRef} onChange={(e)=>getData('supply',e.target.value)} name="subdivision" id="subdivision">
-        <option value="" disabled selected>Select your subdivision</option>
-        {subdivisions && subdivisions.map((district, index) => (
-          <option key={index} value={district.id}>{district.name}</option>
-        ))}
-      </select>
-
-    </div>
+    <SubDivision subdivisionRef={subdivisionRef} subdivisions={subdivisions} getData={getData} />
 
 
     {/* SUPPLY STATUS */}
