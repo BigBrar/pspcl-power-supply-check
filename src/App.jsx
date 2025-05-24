@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import axios from 'axios';
+import { Routes } from "react-router";
 
 
 import './App.css';
@@ -78,9 +79,9 @@ const subdivisionRef = useRef(null)
 
   return (
     <>
-    <div className=' justify-center gap-10'>
+    <div className=''>
       <h1 className='text-2xl font-bold '>Punjab supply check ⚡⚡</h1>
-      <p className='m-5 text-shadow-black'>Check if your division has a power cut </p>
+      <p className='m-5 text-shadow-black text-amber-300'>Check if your division has a power cut </p>
     </div>
 
 
@@ -102,18 +103,9 @@ const subdivisionRef = useRef(null)
 
     {/* SUPPLY STATUS */}
     
-    {/* <div className='justify-center flex flex-col items-center'>
-      
-      <h2 className='gap-4 text-xl m-3 font-bold'> Supply status</h2>
-      
-      {supplyStatus && supplyStatus.status && (
-        <p>Everything is working fine, supply is there.</p>
-      )}
 
-    </div> */}
-
-    <div className='justify-center flex flex-col items-center'>
-  <h2 className='gap-4 text-xl m-3 font-bold'>Supply status</h2>
+    <div className='m-4 mt-10'>
+  <h2 className='gap-4 text-2xl m-3 font-bold'>Supply status</h2>
 
   {!isLoading && supplyStatus?.type === 'ok' && (
     <p>✅ Electricity supply is working fine: {supplyStatus.reason}</p>
@@ -125,7 +117,7 @@ const subdivisionRef = useRef(null)
     <div>
       <p className='mb-2'>🚨 Power cuts reported in the following areas:</p>
       {supplyStatus.entries.map((entry, idx) => (
-        <div key={idx} className='border p-3 m-2 rounded bg-yellow-100'>
+        <div key={idx} className='border p-1 max-w-6xl rounded-2xl bg-yellow-100 text-black'>
           <p><strong>Subdivision:</strong> {entry.subdivision}</p>
           <p><strong>Feeder:</strong> {entry.feeder}</p>
           <p><strong>Start:</strong> {entry.starttime_Display}</p>

@@ -64,4 +64,13 @@ button:focus-visible {
 } */
 
 body{
+  background-color: #16192a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 1rem;
 }
+
