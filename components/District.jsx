@@ -5,7 +5,7 @@ function District({setDivisions, setSubDivisions, setSupplyStatus, getData}) {
 
     const [districts, setDistricts] = useState([])
     const fetchDistricts = async()=>{
-  axios.get('http://127.0.0.1:5000/').then(response =>{
+  axios.get('https://backend-pspcl-power-supply-check.onrender.com/').then(response =>{
     console.log(response.data);
     setDistricts(response.data)
     setDivisions(null)
