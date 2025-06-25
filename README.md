@@ -6,6 +6,8 @@
 A lightweight web app that shows **real-time power supply status** across Punjab, India — using PSPCL data.
 Built to provide easy access to **district-wise, division-wise, and subdivision-wise power cut information** — **without needing the PSPCL mobile app**.
 
+![Website Screenshot](https://media.licdn.com/dms/image/v2/D5622AQF80vDub6rRRg/feedshare-shrink_2048_1536/B56Zd4xHW5HQAo-/0/1750077831420?e=1753920000&v=beta&t=dbRK7ZnU9QWHOn3rcbyqSpmNN1zNDlLtUiRIrCSqjo8)
+
 👉 **Live Web App:** [https://punjabpower.netlify.app/](https://punjabpower.netlify.app/)
 
 ---
