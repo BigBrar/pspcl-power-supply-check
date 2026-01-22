@@ -1,0 +1,2494 @@
+[
+    {
+        "id": 1,
+        "name": "Amritsar",
+        "divisions": [
+            {
+                "id": 3,
+                "name": "DS DIVN. HAKIMA GATE, ASR",
+                "subdivisions": [
+                    {
+                        "id": 9,
+                        "name": "DS S/D DURGIANA TEMPLE TECH., ASR"
+                    },
+                    {
+                        "id": 2,
+                        "name": "DS S/D HAKIMA GATE TECH., ASR"
+                    },
+                    {
+                        "id": 1,
+                        "name": "DS S/D TUNDA TALAB TECH., ASR."
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "name": "DS DIVN. INDUSTRIAL AREA, ASR",
+                "subdivisions": [
+                    {
+                        "id": 10,
+                        "name": "DS GOLDEN TEMPLE TECH., ASR"
+                    },
+                    {
+                        "id": 4,
+                        "name": "DS S/D CHATIWIND TECH., ASR"
+                    },
+                    {
+                        "id": 3,
+                        "name": "DS S/D SULTANWIND TECH., ASR"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "DS CITY CENTER DIVN., ASR",
+                "subdivisions": [
+                    {
+                        "id": 6,
+                        "name": "DS S/D GHEE MANDI TECH, ASR"
+                    },
+                    {
+                        "id": 13,
+                        "name": "DS S/D HUSSAINPURA TECH. ASR."
+                    },
+                    {
+                        "id": 12,
+                        "name": "DS S/D MALL MANDI TECH. ASR."
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "DS CIVIL LINE DIVN., ASR",
+                "subdivisions": [
+                    {
+                        "id": 7,
+                        "name": "DS S/D CIVIL LINE TECH., ASR"
+                    },
+                    {
+                        "id": 11,
+                        "name": "DS S/D ISLAMABAD TECH., ASR"
+                    },
+                    {
+                        "id": 8,
+                        "name": "DS S/D LAWRENCE ROAD TECH., ASR"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "name": "DS EAST DIVN.",
+                "subdivisions": [
+                    {
+                        "id": 18,
+                        "name": "DS GOPAL NAGAR S/D"
+                    },
+                    {
+                        "id": 22,
+                        "name": "DS S/D CHHEHARTA"
+                    },
+                    {
+                        "id": 30,
+                        "name": "DS S/D East Commercial"
+                    },
+                    {
+                        "id": 17,
+                        "name": "DS S/D EAST TECH(East+Verka)"
+                    },
+                    {
+                        "id": 21,
+                        "name": "DS S/D WEST ASR"
+                    },
+                    {
+                        "id": 19,
+                        "name": "DS SOUTH S/D Asr"
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "name": "DS S/U DIVN. AMRITSAR",
+                "subdivisions": [
+                    {
+                        "id": 20,
+                        "name": "DS S/D HARSHA CHINNA"
+                    },
+                    {
+                        "id": 29,
+                        "name": "DS S/D KATHUNANGAL"
+                    },
+                    {
+                        "id": 27,
+                        "name": "DS S/D NO-1 MAJITHA"
+                    },
+                    {
+                        "id": 28,
+                        "name": "DS S/D NO-2 MAJITHA"
+                    },
+                    {
+                        "id": 31,
+                        "name": "DS S/D UDHOKE"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "name": "DS WEST DIVN. ASR",
+                "subdivisions": [
+                    {
+                        "id": 25,
+                        "name": "DS S/D ATTARI"
+                    },
+                    {
+                        "id": 23,
+                        "name": "DS S/D CHOGAWAN"
+                    },
+                    {
+                        "id": 26,
+                        "name": "DS S/D KHASSA"
+                    },
+                    {
+                        "id": 24,
+                        "name": "DS S/D LOPOKE"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "name": "DS. DIVN. AJNALA",
+                "subdivisions": [
+                    {
+                        "id": 36,
+                        "name": "DS S/D AJNALA"
+                    },
+                    {
+                        "id": 35,
+                        "name": "DS S/D JASTARWAL"
+                    },
+                    {
+                        "id": 34,
+                        "name": "DS S/D RAMDASS"
+                    },
+                    {
+                        "id": 33,
+                        "name": "DS S/U S/D FATEHGARH CHURIAN"
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "name": "DS DIVN. JANDIALA GURU",
+                "subdivisions": [
+                    {
+                        "id": 38,
+                        "name": "DS S/D BANDALA"
+                    },
+                    {
+                        "id": 41,
+                        "name": "DS S/D FATEHPUR RAJPUTAN"
+                    },
+                    {
+                        "id": 37,
+                        "name": "DS S/D JANDIALA GURU"
+                    },
+                    {
+                        "id": 39,
+                        "name": "DS S/D KOT MIT SINGH"
+                    },
+                    {
+                        "id": 40,
+                        "name": "DS S/D SULTANWIND (M MANDI)"
+                    },
+                    {
+                        "id": 42,
+                        "name": "DS S/D TANGRA"
+                    }
+                ]
+            },
+            {
+                "id": 19,
+                "name": "DS DIVN. RAYYA AT BEAS"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Barnala",
+        "divisions": [
+            {
+                "id": 72,
+                "name": "DS CITY DIVN. BARNALA",
+                "subdivisions": [
+                    {
+                        "id": 337,
+                        "name": "DS CITY S/D BARNALA"
+                    },
+                    {
+                        "id": 340,
+                        "name": "DS S/D MEHAL KALAN"
+                    },
+                    {
+                        "id": 338,
+                        "name": "DS S/D NO-1 DHANAULA"
+                    },
+                    {
+                        "id": 339,
+                        "name": "DS S/D NO-2 DHANAULA"
+                    },
+                    {
+                        "id": 341,
+                        "name": "DS S/D SANGHERA"
+                    },
+                    {
+                        "id": 342,
+                        "name": "DS S/D THULIWAL"
+                    }
+                ]
+            },
+            {
+                "id": 73,
+                "name": "DS S/U DIVN. BARNALA",
+                "subdivisions": [
+                    {
+                        "id": 345,
+                        "name": "DS S/D BHADOUR"
+                    },
+                    {
+                        "id": 346,
+                        "name": "DS S/D NO-1 TAPA"
+                    },
+                    {
+                        "id": 347,
+                        "name": "DS S/D NO-2 TAPA"
+                    },
+                    {
+                        "id": 344,
+                        "name": "DS S/D SEHNA"
+                    },
+                    {
+                        "id": 343,
+                        "name": "DS S/U S/D BARNALA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Bathinda",
+        "divisions": [
+            {
+                "id": 83,
+                "name": "DS CITY DIVN. BATHINDA",
+                "subdivisions": [
+                    {
+                        "id": 397,
+                        "name": "DS S/D GONIANA"
+                    },
+                    {
+                        "id": 479,
+                        "name": "DS S/D SANGAT"
+                    },
+                    {
+                        "id": 395,
+                        "name": "DS S/D Tech-1 Bathinda"
+                    },
+                    {
+                        "id": 394,
+                        "name": "DS S/D Tech-2 Bathinda"
+                    }
+                ]
+            },
+            {
+                "id": 84,
+                "name": "DS DIVN. RAMPURA PHUL",
+                "subdivisions": [
+                    {
+                        "id": 398,
+                        "name": "DS S/D BHUCHO MANDI"
+                    },
+                    {
+                        "id": 399,
+                        "name": "DS S/D CITY RAMPURA PHUL"
+                    },
+                    {
+                        "id": 400,
+                        "name": "DS S/D S/U RAMPURA PHUL"
+                    }
+                ]
+            },
+            {
+                "id": 85,
+                "name": "DS DIVN. BHAGTA BHAI KA"
+            },
+            {
+                "id": 86,
+                "name": "DS DIVN. MAUR",
+                "subdivisions": [
+                    {
+                        "id": 405,
+                        "name": "DS CITY S/D MAUR"
+                    },
+                    {
+                        "id": 408,
+                        "name": "DS S/D KOT SHAMIR"
+                    },
+                    {
+                        "id": 407,
+                        "name": "DS S/D RAMA MANDI"
+                    },
+                    {
+                        "id": 404,
+                        "name": "DS S/D TALWANDI SAHBO"
+                    },
+                    {
+                        "id": 406,
+                        "name": "DS S/U S/D MAUR"
+                    }
+                ]
+            },
+            {
+                "id": 101,
+                "name": "DS DIVN. BADAL",
+                "subdivisions": [
+                    {
+                        "id": 476,
+                        "name": "DS S/D BADAL"
+                    },
+                    {
+                        "id": 478,
+                        "name": "DS S/D DABWALI"
+                    },
+                    {
+                        "id": 477,
+                        "name": "DS S/D LAMBI"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Faridkot",
+        "divisions": [
+            {
+                "id": 89,
+                "name": "DS DIVN. FARIDKOT"
+            },
+            {
+                "id": 90,
+                "name": "DS DIVN. KOTKAPURA"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Fatehgarh Sahib",
+        "divisions": [
+            {
+                "id": 56,
+                "name": "DS DIVN. KHANNA",
+                "subdivisions": [
+                    {
+                        "id": 261,
+                        "name": "DS CITY-1 S/D KHANNA"
+                    },
+                    {
+                        "id": 262,
+                        "name": "DS CITY-2 S/D KHANNA"
+                    },
+                    {
+                        "id": 264,
+                        "name": "DS S/D BHARI"
+                    },
+                    {
+                        "id": 266,
+                        "name": "DS S/D CHAWA"
+                    },
+                    {
+                        "id": 265,
+                        "name": "DS S/D JARG"
+                    },
+                    {
+                        "id": 263,
+                        "name": "DS S/U S/D KHANNA"
+                    }
+                ]
+            },
+            {
+                "id": 57,
+                "name": "DS DIVN. SIRHIND"
+            },
+            {
+                "id": 59,
+                "name": "DS DIVN. AMLOH"
+            },
+            {
+                "id": 60,
+                "name": "DS (SPL)DIVN.M/GOBIND GARH",
+                "subdivisions": [
+                    {
+                        "id": 282,
+                        "name": "T-I (DS)SPL. S/DIV.M/GOBIND GARH"
+                    },
+                    {
+                        "id": 283,
+                        "name": "T-II (DS)SPL. S/DIV.M/GOBIND GARH"
+                    }
+                ]
+            },
+            {
+                "id": 79,
+                "name": "DS DIVN. SAMRALA",
+                "subdivisions": [
+                    {
+                        "id": 381,
+                        "name": "BEHLOLPUR"
+                    },
+                    {
+                        "id": 377,
+                        "name": "DS S/D CITY SAMRALA"
+                    },
+                    {
+                        "id": 378,
+                        "name": "DS S/U S/D SAMRALA"
+                    },
+                    {
+                        "id": 383,
+                        "name": "KATANI KALAN"
+                    },
+                    {
+                        "id": 379,
+                        "name": "KHAMANO"
+                    },
+                    {
+                        "id": 382,
+                        "name": "KOHARA"
+                    },
+                    {
+                        "id": 380,
+                        "name": "MACHHIWARA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Fazilka",
+        "divisions": [
+            {
+                "id": 96,
+                "name": "DS DIVN. JALALABAD",
+                "subdivisions": [
+                    {
+                        "id": 455,
+                        "name": "DS CITY S/D GURU HAR SAHAI"
+                    },
+                    {
+                        "id": 453,
+                        "name": "DS CITY S/D JALALABAD"
+                    },
+                    {
+                        "id": 457,
+                        "name": "DS S/D GHOBAYA"
+                    },
+                    {
+                        "id": 456,
+                        "name": "DS S/U S/D GURU HAR SAHAI"
+                    },
+                    {
+                        "id": 454,
+                        "name": "DS S/U S/D JALALABAD"
+                    }
+                ]
+            },
+            {
+                "id": 99,
+                "name": "DS DIVN. MALOUT",
+                "subdivisions": [
+                    {
+                        "id": 469,
+                        "name": "DS CITY S/D MALOUT"
+                    },
+                    {
+                        "id": 472,
+                        "name": "DS S/D ABUL KHURANA"
+                    },
+                    {
+                        "id": 471,
+                        "name": "DS S/D ARNIWALA"
+                    },
+                    {
+                        "id": 470,
+                        "name": "DS S/U S/D MALOUT"
+                    }
+                ]
+            },
+            {
+                "id": 102,
+                "name": "DS DIVN. ABOHAR",
+                "subdivisions": [
+                    {
+                        "id": 483,
+                        "name": "DS S/D KHUIAN SARWAR"
+                    },
+                    {
+                        "id": 480,
+                        "name": "DS S/D NO.1 ABOHAR"
+                    },
+                    {
+                        "id": 481,
+                        "name": "DS S/D NO.2 ABOHAR "
+                    },
+                    {
+                        "id": 482,
+                        "name": "DS S/D NO.3 ABOHAR"
+                    }
+                ]
+            },
+            {
+                "id": 103,
+                "name": "DS DIVN. FAZILKA",
+                "subdivisions": [
+                    {
+                        "id": 484,
+                        "name": "DS CITY S/D FAZILKA"
+                    },
+                    {
+                        "id": 486,
+                        "name": "DS S/D KHUI KHERA"
+                    },
+                    {
+                        "id": 487,
+                        "name": "DS S/D LADUKA"
+                    },
+                    {
+                        "id": 485,
+                        "name": "DS S/U S/D FAZILKA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Ferozepur",
+        "divisions": [
+            {
+                "id": 94,
+                "name": "DS CITY DIVN. FEROZEPUR",
+                "subdivisions": [
+                    {
+                        "id": 444,
+                        "name": "DS CANTT. NO-2 S/D FEROZEPUR"
+                    },
+                    {
+                        "id": 443,
+                        "name": "DS CITY S/D FEROZEPUR"
+                    },
+                    {
+                        "id": 446,
+                        "name": "DS S/D FEROZESHAH"
+                    },
+                    {
+                        "id": 462,
+                        "name": "DS S/D MUDKI"
+                    },
+                    {
+                        "id": 445,
+                        "name": "DS S/D SHER KHAN "
+                    }
+                ]
+            },
+            {
+                "id": 97,
+                "name": "DS DIVN. ZIRA",
+                "subdivisions": [
+                    {
+                        "id": 459,
+                        "name": "DS S/D MAKHU"
+                    },
+                    {
+                        "id": 447,
+                        "name": "DS S/D MALLANWALA"
+                    },
+                    {
+                        "id": 460,
+                        "name": "DS S/D TALWANDI BHAI"
+                    },
+                    {
+                        "id": 458,
+                        "name": "DS S/D ZIRA"
+                    }
+                ]
+            },
+            {
+                "id": 95,
+                "name": "DS S/U DIVN. FEROZEPUR",
+                "subdivisions": [
+                    {
+                        "id": 448,
+                        "name": "DS CANTT. NO-1 S/D FEROZEPUR"
+                    },
+                    {
+                        "id": 452,
+                        "name": "DS S/D JHOK HARI HAR"
+                    },
+                    {
+                        "id": 451,
+                        "name": "DS S/D JHOKE TEHAL SINGH"
+                    },
+                    {
+                        "id": 450,
+                        "name": "DS S/D MAMDOT"
+                    },
+                    {
+                        "id": 449,
+                        "name": "DS S/U S/D FEROZEPUR"
+                    }
+                ]
+            },
+            {
+                "id": 96,
+                "name": "DS DIVN. JALALABAD",
+                "subdivisions": [
+                    {
+                        "id": 455,
+                        "name": "DS CITY S/D GURU HAR SAHAI"
+                    },
+                    {
+                        "id": 453,
+                        "name": "DS CITY S/D JALALABAD"
+                    },
+                    {
+                        "id": 457,
+                        "name": "DS S/D GHOBAYA"
+                    },
+                    {
+                        "id": 456,
+                        "name": "DS S/U S/D GURU HAR SAHAI"
+                    },
+                    {
+                        "id": 454,
+                        "name": "DS S/U S/D JALALABAD"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Gurdaspur",
+        "divisions": [
+            {
+                "id": 12,
+                "name": "DS S/U DIVN. BATALA",
+                "subdivisions": [
+                    {
+                        "id": 32,
+                        "name": "DS CITY S/D FATEHGARH CHURIAN"
+                    },
+                    {
+                        "id": 58,
+                        "name": "DS S/D ALIWAL"
+                    },
+                    {
+                        "id": 56,
+                        "name": "DS S/D DERA BABA NANAK"
+                    },
+                    {
+                        "id": 57,
+                        "name": "DS S/D KOTLI SURAT MALHI"
+                    },
+                    {
+                        "id": 55,
+                        "name": "DS S/D M/TOWN S/D BATALA"
+                    },
+                    {
+                        "id": 54,
+                        "name": "DS S/D NORTH S/D BATALA"
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "name": "DS DIVN.  QADIAN",
+                "subdivisions": [
+                    {
+                        "id": 44,
+                        "name": "DS S/D GHUMAN"
+                    },
+                    {
+                        "id": 47,
+                        "name": "DS S/D HARCHOWAL"
+                    },
+                    {
+                        "id": 45,
+                        "name": "DS S/D KANHUWAN"
+                    },
+                    {
+                        "id": 46,
+                        "name": "DS S/D QADIAN"
+                    },
+                    {
+                        "id": 43,
+                        "name": "DS S/D SRI HARGOBINDPUR"
+                    }
+                ]
+            },
+            {
+                "id": 11,
+                "name": "DS CITY DIVN.  BATALA"
+            },
+            {
+                "id": 13,
+                "name": "DS DIVN. DHARIWAL",
+                "subdivisions": [
+                    {
+                        "id": 63,
+                        "name": "DS S/D DEHRIWAL"
+                    },
+                    {
+                        "id": 59,
+                        "name": "DS S/D DHARIWAL"
+                    },
+                    {
+                        "id": 62,
+                        "name": "DS S/D KALANAUR"
+                    },
+                    {
+                        "id": 61,
+                        "name": "DS S/D N/MAJHA SINGH"
+                    }
+                ]
+            },
+            {
+                "id": 14,
+                "name": "DS DIVN. GURDASPUR",
+                "subdivisions": [
+                    {
+                        "id": 64,
+                        "name": "DS CITY S/D GURDASPUR"
+                    },
+                    {
+                        "id": 67,
+                        "name": "DS S/D BEHRAMPUR"
+                    },
+                    {
+                        "id": 69,
+                        "name": "DS S/D DORANGLA"
+                    },
+                    {
+                        "id": 60,
+                        "name": "DS S/D JOURAN CHHITRAN"
+                    },
+                    {
+                        "id": 68,
+                        "name": "DS S/D PURANA SHELLA"
+                    },
+                    {
+                        "id": 66,
+                        "name": "DS S/D TIBBAR"
+                    },
+                    {
+                        "id": 65,
+                        "name": "DS S/U S/D GURDASPUR"
+                    }
+                ]
+            },
+            {
+                "id": 16,
+                "name": "DS S/U DIVN. PATHANKOT",
+                "subdivisions": [
+                    {
+                        "id": 76,
+                        "name": "DS EAST S/D PATHANKOT"
+                    },
+                    {
+                        "id": 79,
+                        "name": "DS S/D DHAR"
+                    },
+                    {
+                        "id": 77,
+                        "name": "DS S/D DINA NAGAR"
+                    },
+                    {
+                        "id": 78,
+                        "name": "DS S/D PANDORI"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Hoshiarpur",
+        "divisions": [
+            {
+                "id": 27,
+                "name": "DS CITY DIVN. HSP",
+                "subdivisions": [
+                    {
+                        "id": 134,
+                        "name": "DS CITY S/D HSP"
+                    },
+                    {
+                        "id": 133,
+                        "name": "DS CIVIL LINES S/D HSP"
+                    },
+                    {
+                        "id": 135,
+                        "name": "DS MODEL TOWN S/D HSP"
+                    },
+                    {
+                        "id": 501,
+                        "name": "DS S/D  Janauri"
+                    },
+                    {
+                        "id": 136,
+                        "name": "DS S/D BULLOWAL"
+                    },
+                    {
+                        "id": 137,
+                        "name": "DS S/D HARYANA"
+                    }
+                ]
+            },
+            {
+                "id": 28,
+                "name": "DS S/U DIVN. HSP"
+            },
+            {
+                "id": 29,
+                "name": "DS DIVN. DASUYA",
+                "subdivisions": [
+                    {
+                        "id": 142,
+                        "name": "DS S/D CITY DASUYA"
+                    },
+                    {
+                        "id": 144,
+                        "name": "DS S/D GARDIWAL"
+                    },
+                    {
+                        "id": 146,
+                        "name": "DS S/D GHOGHRA"
+                    },
+                    {
+                        "id": 145,
+                        "name": "DS S/D MAINI"
+                    },
+                    {
+                        "id": 143,
+                        "name": "DS S/U S/D DASUYA"
+                    },
+                    {
+                        "id": 498,
+                        "name": "SUB OFFICE BADLA"
+                    }
+                ]
+            },
+            {
+                "id": 30,
+                "name": "DS DIVN. MUKERIAN",
+                "subdivisions": [
+                    {
+                        "id": 148,
+                        "name": "DS S/D BHANGALA"
+                    },
+                    {
+                        "id": 150,
+                        "name": "DS S/D DATARPUR"
+                    },
+                    {
+                        "id": 149,
+                        "name": "DS S/D HAZIPUR"
+                    },
+                    {
+                        "id": 147,
+                        "name": "DS S/D MUKERIAN"
+                    },
+                    {
+                        "id": 151,
+                        "name": "DS S/D TALWARA"
+                    }
+                ]
+            },
+            {
+                "id": 31,
+                "name": "DS DIVN. BHOGPUR"
+            },
+            {
+                "id": 32,
+                "name": "DS DIVN. MAHILPUR",
+                "subdivisions": [
+                    {
+                        "id": 158,
+                        "name": "DS S/D BASSI KALAN"
+                    },
+                    {
+                        "id": 157,
+                        "name": "DS S/D MAHILPUR"
+                    },
+                    {
+                        "id": 160,
+                        "name": "DS S/D PALDI"
+                    },
+                    {
+                        "id": 159,
+                        "name": "DS S/D SAILA KHURD"
+                    }
+                ]
+            },
+            {
+                "id": 40,
+                "name": "DS DIVN. GARHSHANKAR",
+                "subdivisions": [
+                    {
+                        "id": 199,
+                        "name": "DS S/D CITY GARHSHANKAR"
+                    },
+                    {
+                        "id": 201,
+                        "name": "DS S/D CITY-1 BALACHAUR"
+                    },
+                    {
+                        "id": 202,
+                        "name": "DS S/D CITY-2 BALACHAUR"
+                    },
+                    {
+                        "id": 203,
+                        "name": "DS S/D SAROYA"
+                    },
+                    {
+                        "id": 200,
+                        "name": "DS S/U S/D GARHSHANKAR"
+                    },
+                    {
+                        "id": 496,
+                        "name": "SUB OFFICE BINEWAL"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Jalandhar",
+        "divisions": [
+            {
+                "id": 24,
+                "name": "DS Divn. East, Jalandhar"
+            },
+            {
+                "id": 22,
+                "name": "DS Divn. Cantt, Jalandhar",
+                "subdivisions": [
+                    {
+                        "id": 120,
+                        "name": "DS S/D Rural Adampur, Jalandhar"
+                    },
+                    {
+                        "id": 115,
+                        "name": "DS S/D Rural Cantt, Jalandhar"
+                    },
+                    {
+                        "id": 117,
+                        "name": "DS S/D Rural Jandu Singha, Jalandhar"
+                    },
+                    {
+                        "id": 106,
+                        "name": "DS S/D Tech-1 Cantt, Jalandhar"
+                    },
+                    {
+                        "id": 116,
+                        "name": "DS S/D Tech-2 Suburban Cantt, Jalandhar"
+                    }
+                ]
+            },
+            {
+                "id": 25,
+                "name": "DS Divn. Model Town, Jalandhar",
+                "subdivisions": [
+                    {
+                        "id": 121,
+                        "name": "DS S/D S/U Lambran,Jalandhar"
+                    },
+                    {
+                        "id": 126,
+                        "name": "DS S/D Tech-1 Model House, Jalandhar"
+                    },
+                    {
+                        "id": 124,
+                        "name": "DS S/D Tech-2 Model Town, Jalandhar"
+                    },
+                    {
+                        "id": 123,
+                        "name": "DS S/D Tech-3 Abadpura, Jalandhar"
+                    },
+                    {
+                        "id": 109,
+                        "name": "DS S/D Tech-4 Bastian, Jalandhar"
+                    }
+                ]
+            },
+            {
+                "id": 23,
+                "name": "DS Divn. West, Jalandhar",
+                "subdivisions": [
+                    {
+                        "id": 111,
+                        "name": "DS S/D Tech-1 Civil Line, Jalandhar"
+                    },
+                    {
+                        "id": 113,
+                        "name": "DS S/D Tech-2 Maqsudan, Jalandhar"
+                    },
+                    {
+                        "id": 110,
+                        "name": "DS S/D Tech-3 MAI HIRAN GATE, JALANDHAR"
+                    },
+                    {
+                        "id": 125,
+                        "name": "DS S/D Tech-4 Patel Chowk, Jalandhar"
+                    }
+                ]
+            },
+            {
+                "id": 31,
+                "name": "DS DIVN. BHOGPUR",
+                "subdivisions": [
+                    {
+                        "id": 154,
+                        "name": "DS S/D CITY TANDA"
+                    },
+                    {
+                        "id": 152,
+                        "name": "DS S/D CITY-1 BHOGPUR"
+                    },
+                    {
+                        "id": 153,
+                        "name": "DS S/D CITY-2 BHOGPUR"
+                    },
+                    {
+                        "id": 156,
+                        "name": "DS S/D KANDHALA JATAN"
+                    },
+                    {
+                        "id": 155,
+                        "name": "DS S/U S/D TANDA"
+                    }
+                ]
+            },
+            {
+                "id": 35,
+                "name": "DS CITY DIVN. NAKODAR"
+            },
+            {
+                "id": 36,
+                "name": "DS S/U DIVN. NAKODAR"
+            },
+            {
+                "id": 37,
+                "name": "DS DIVN. KARTARPUR"
+            },
+            {
+                "id": 39,
+                "name": "DS DIVN. GORAYA",
+                "subdivisions": [
+                    {
+                        "id": 196,
+                        "name": "DS S/D APRA"
+                    },
+                    {
+                        "id": 194,
+                        "name": "DS S/D CITY GORAYA"
+                    },
+                    {
+                        "id": 197,
+                        "name": "DS S/D PHILLAUR"
+                    },
+                    {
+                        "id": 198,
+                        "name": "DS S/D RURKA KALAN"
+                    },
+                    {
+                        "id": 195,
+                        "name": "DS S/U S/D GORAYA"
+                    },
+                    {
+                        "id": 497,
+                        "name": "SUB OFFICE DOSANJH KALAN "
+                    }
+                ]
+            },
+            {
+                "id": 41,
+                "name": "DS DIVN. BANGA",
+                "subdivisions": [
+                    {
+                        "id": 206,
+                        "name": "DS S/D BEHRAM NO 1"
+                    },
+                    {
+                        "id": 207,
+                        "name": "DS S/D BEHRAM NO 2"
+                    },
+                    {
+                        "id": 204,
+                        "name": "DS S/D CITY BANGA"
+                    },
+                    {
+                        "id": 208,
+                        "name": "DS S/D MUKANDPUR"
+                    },
+                    {
+                        "id": 205,
+                        "name": "DS S/U S/D BANGA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Kapurthala",
+        "divisions": [
+            {
+                "id": 26,
+                "name": "DS DIVN. PHAGWARA"
+            },
+            {
+                "id": 28,
+                "name": "DS S/U DIVN. HSP"
+            },
+            {
+                "id": 33,
+                "name": "DS CITY  DIVN. KAPURTHALA",
+                "subdivisions": [
+                    {
+                        "id": 161,
+                        "name": "DS S/D CITY-1 KAPURTHALA"
+                    },
+                    {
+                        "id": 162,
+                        "name": "DS S/D CITY-1 SULTANPUR "
+                    },
+                    {
+                        "id": 163,
+                        "name": "DS S/D CITY-2 SULTANPUR "
+                    },
+                    {
+                        "id": 164,
+                        "name": "DS S/D KALA SINGIANA"
+                    },
+                    {
+                        "id": 166,
+                        "name": "DS S/D KHERA MANDIR"
+                    }
+                ]
+            },
+            {
+                "id": 34,
+                "name": "DS S/U DIVN. KAPURTHALA"
+            },
+            {
+                "id": 37,
+                "name": "DS DIVN. KARTARPUR",
+                "subdivisions": [
+                    {
+                        "id": 187,
+                        "name": "DS S/D BEGOWAL"
+                    },
+                    {
+                        "id": 188,
+                        "name": "DS S/D BHOLATH"
+                    },
+                    {
+                        "id": 184,
+                        "name": "DS S/D CITY-1 KARTARPUR"
+                    },
+                    {
+                        "id": 185,
+                        "name": "DS S/D CITY-2 KARTARPUR"
+                    },
+                    {
+                        "id": 186,
+                        "name": "DS S/D HAMIRA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Ludhiana",
+        "divisions": [
+            {
+                "id": 42,
+                "name": "DS CITY CEN. (SPL) DIVN."
+            },
+            {
+                "id": 43,
+                "name": "DS F. POINT (SPL) DIVN.",
+                "subdivisions": [
+                    {
+                        "id": 214,
+                        "name": "TECH. -I F. POINT (SPL)"
+                    },
+                    {
+                        "id": 215,
+                        "name": "TECH. -II F. POINT (SPL)"
+                    },
+                    {
+                        "id": 851,
+                        "name": "TECH. -III F. POINT (SPL)"
+                    }
+                ]
+            },
+            {
+                "id": 44,
+                "name": "DS CMC (SPL) DIVN.",
+                "subdivisions": [
+                    {
+                        "id": 217,
+                        "name": "TECH. UNIT-I CMC (SPL)"
+                    },
+                    {
+                        "id": 218,
+                        "name": "TECH. UNIT-II CMC (SPL)"
+                    }
+                ]
+            },
+            {
+                "id": 45,
+                "name": "DS S. NAGAR (SPL) DIVN."
+            },
+            {
+                "id": 46,
+                "name": "DS CITY WEST (SPL) DIVN."
+            },
+            {
+                "id": 47,
+                "name": "DS MODEL TOWN (SPL) DIVN.",
+                "subdivisions": [
+                    {
+                        "id": 227,
+                        "name": "TECH .-II M. TOWN (SPL)"
+                    },
+                    {
+                        "id": 226,
+                        "name": "TECH UNIT-I M. TOWN "
+                    }
+                ]
+            },
+            {
+                "id": 50,
+                "name": "DS AGAR. NGR. (SPL) DIVN."
+            },
+            {
+                "id": 48,
+                "name": "DS J. NGR (SPL) DIVN.",
+                "subdivisions": [
+                    {
+                        "id": 230,
+                        "name": "TECH UNIT-I J.NAGAR"
+                    },
+                    {
+                        "id": 231,
+                        "name": "TECH UNIT-II J.NAGAR"
+                    },
+                    {
+                        "id": 232,
+                        "name": "TECH UNIT-III J.NAGAR"
+                    }
+                ]
+            },
+            {
+                "id": 49,
+                "name": "DS ESTATE (SPL) DIVN."
+            },
+            {
+                "id": 51,
+                "name": "DS S/U DIVN. LALTON KALAN",
+                "subdivisions": [
+                    {
+                        "id": 240,
+                        "name": "DS S/D LALTON KALAN"
+                    },
+                    {
+                        "id": 241,
+                        "name": "DS S/D NARANGWAL"
+                    },
+                    {
+                        "id": 242,
+                        "name": "DS S/D PAKHOWAL"
+                    },
+                    {
+                        "id": 243,
+                        "name": "DS S/D SARINH"
+                    },
+                    {
+                        "id": 946,
+                        "name": "DS SO Kila Raipur"
+                    }
+                ]
+            },
+            {
+                "id": 52,
+                "name": "DS DIVN. ADDA DAKHA"
+            },
+            {
+                "id": 53,
+                "name": "DS DIVN. JAGRAON",
+                "subdivisions": [
+                    {
+                        "id": 248,
+                        "name": "DS CITY S/D JAGRAON"
+                    },
+                    {
+                        "id": 250,
+                        "name": "DS S/D SIDHWAN BET"
+                    },
+                    {
+                        "id": 251,
+                        "name": "DS S/D SIDHWAN KHURD"
+                    },
+                    {
+                        "id": 249,
+                        "name": "DS S/U S/D JAGRAON"
+                    }
+                ]
+            },
+            {
+                "id": 54,
+                "name": "DS DIVN. RAIKOT",
+                "subdivisions": [
+                    {
+                        "id": 254,
+                        "name": "DS S/D BASSIAN"
+                    },
+                    {
+                        "id": 255,
+                        "name": "DS S/D LAKHA"
+                    },
+                    {
+                        "id": 252,
+                        "name": "DS S/D RAIKOT"
+                    },
+                    {
+                        "id": 253,
+                        "name": "DS S/D ROOMI"
+                    }
+                ]
+            },
+            {
+                "id": 55,
+                "name": "DS DIVN. AHMEDGARH",
+                "subdivisions": [
+                    {
+                        "id": 258,
+                        "name": "DS CITY S/D Ahmedgarh"
+                    },
+                    {
+                        "id": 259,
+                        "name": "DS S/D MALOUD"
+                    },
+                    {
+                        "id": 260,
+                        "name": "DS S/D SIHAR"
+                    },
+                    {
+                        "id": 256,
+                        "name": "DS S/U S/D NO-1 AHD"
+                    },
+                    {
+                        "id": 257,
+                        "name": "DS S/U S/D NO-2 AHD"
+                    }
+                ]
+            },
+            {
+                "id": 56,
+                "name": "DS DIVN. KHANNA"
+            },
+            {
+                "id": 58,
+                "name": "DS DIVN. DORAHA"
+            },
+            {
+                "id": 79,
+                "name": "DS DIVN. SAMRALA",
+                "subdivisions": [
+                    {
+                        "id": 381,
+                        "name": "BEHLOLPUR"
+                    },
+                    {
+                        "id": 377,
+                        "name": "DS S/D CITY SAMRALA"
+                    },
+                    {
+                        "id": 378,
+                        "name": "DS S/U S/D SAMRALA"
+                    },
+                    {
+                        "id": 383,
+                        "name": "KATANI KALAN"
+                    },
+                    {
+                        "id": 379,
+                        "name": "KHAMANO"
+                    },
+                    {
+                        "id": 382,
+                        "name": "KOHARA"
+                    },
+                    {
+                        "id": 380,
+                        "name": "MACHHIWARA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "name": "Malerkotla",
+        "divisions": [
+            {
+                "id": 55,
+                "name": "DS DIVN. AHMEDGARH",
+                "subdivisions": [
+                    {
+                        "id": 258,
+                        "name": "DS CITY S/D Ahmedgarh"
+                    },
+                    {
+                        "id": 259,
+                        "name": "DS S/D MALOUD"
+                    },
+                    {
+                        "id": 260,
+                        "name": "DS S/D SIHAR"
+                    },
+                    {
+                        "id": 256,
+                        "name": "DS S/U S/D NO-1 AHD"
+                    },
+                    {
+                        "id": 257,
+                        "name": "DS S/U S/D NO-2 AHD"
+                    }
+                ]
+            },
+            {
+                "id": 64,
+                "name": "DS DIVN. NABHA"
+            },
+            {
+                "id": 74,
+                "name": "DS DIVN. MALERKOTLA",
+                "subdivisions": [
+                    {
+                        "id": 348,
+                        "name": "DS S/D CITY-1 MALERKOTLA"
+                    },
+                    {
+                        "id": 349,
+                        "name": "DS S/D CITY-2 MALERKOTLA"
+                    },
+                    {
+                        "id": 353,
+                        "name": "DS S/D KUP-KALAN"
+                    },
+                    {
+                        "id": 352,
+                        "name": "DS S/D LASSOI"
+                    },
+                    {
+                        "id": 354,
+                        "name": "DS S/D SANDOUR"
+                    },
+                    {
+                        "id": 351,
+                        "name": "DS S/D SHERWANIKOT"
+                    },
+                    {
+                        "id": 350,
+                        "name": "DS S/U S/D MALERKOTLA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Mansa",
+        "divisions": [
+            {
+                "id": 87,
+                "name": "DS DIVN. MANSA",
+                "subdivisions": [
+                    {
+                        "id": 409,
+                        "name": "DS CITY S/D MANSA"
+                    },
+                    {
+                        "id": 412,
+                        "name": "DS S/D JHUNIR"
+                    },
+                    {
+                        "id": 413,
+                        "name": "DS S/D JOGA"
+                    },
+                    {
+                        "id": 411,
+                        "name": "DS S/D SURDULGARH"
+                    },
+                    {
+                        "id": 410,
+                        "name": "DS S/U S/D MANSA"
+                    }
+                ]
+            },
+            {
+                "id": 88,
+                "name": "DS DIVN. BUDHLADA"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Moga",
+        "divisions": [
+            {
+                "id": 91,
+                "name": "DS DIVN. BAGHAPURANA",
+                "subdivisions": [
+                    {
+                        "id": 427,
+                        "name": "DS CITY S/D BAGHAPURANA"
+                    },
+                    {
+                        "id": 431,
+                        "name": "DS S/D BILASPUR"
+                    },
+                    {
+                        "id": 429,
+                        "name": "DS S/D PATTO HIRA SINGH"
+                    },
+                    {
+                        "id": 430,
+                        "name": "DS S/D SAMADH BHAI"
+                    },
+                    {
+                        "id": 428,
+                        "name": "DS S/U S/D BAGHAPURANA"
+                    }
+                ]
+            },
+            {
+                "id": 92,
+                "name": "DS CITY DIVN. MOGA"
+            },
+            {
+                "id": 93,
+                "name": "DS S/U DIVN. MOGA"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Mohali",
+        "divisions": [
+            {
+                "id": 77,
+                "name": "DS DIVN.  KHARAR",
+                "subdivisions": [
+                    {
+                        "id": 367,
+                        "name": "DS S/D CITY KHARAR"
+                    },
+                    {
+                        "id": 369,
+                        "name": "DS S/D CITY MORINDA"
+                    },
+                    {
+                        "id": 853,
+                        "name": "DS S/D CITY-2 KHARAR"
+                    },
+                    {
+                        "id": 371,
+                        "name": "DS S/D KURALI"
+                    },
+                    {
+                        "id": 372,
+                        "name": "DS S/D MAJRA"
+                    },
+                    {
+                        "id": 368,
+                        "name": "DS S/U S/D KHARAR"
+                    },
+                    {
+                        "id": 370,
+                        "name": "DS S/U S/D MORINDA"
+                    },
+                    {
+                        "id": 492,
+                        "name": "SUB OFFICE GHARUAN"
+                    }
+                ]
+            },
+            {
+                "id": 80,
+                "name": "DS SPL. DIVN. MOHALI"
+            },
+            {
+                "id": 81,
+                "name": "DS DIVN. ZIRAKPUR"
+            },
+            {
+                "id": 82,
+                "name": "DS DIVN. LALRU",
+                "subdivisions": [
+                    {
+                        "id": 392,
+                        "name": "DS S/D HANDESRA"
+                    },
+                    {
+                        "id": 391,
+                        "name": "DS S/D LALRU"
+                    },
+                    {
+                        "id": 858,
+                        "name": "DS S/D Mubarkpur"
+                    },
+                    {
+                        "id": 390,
+                        "name": "DS S/D SAIDPURA"
+                    }
+                ]
+            },
+            {
+                "id": 375,
+                "name": "DS DIVN AEROCITY, MOHALI",
+                "subdivisions": [
+                    {
+                        "id": 957,
+                        "name": "DS S/D BANUR (Aerocity)"
+                    },
+                    {
+                        "id": 954,
+                        "name": "DS S/D TECH, IT CITY (Aerocity)"
+                    },
+                    {
+                        "id": 955,
+                        "name": "DS S/D TECH, SEC-103 (SANETA) (Aerocity)"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Pathankot",
+        "divisions": [
+            {
+                "id": 15,
+                "name": "DS CITY DIVN. PATHANKOT",
+                "subdivisions": [
+                    {
+                        "id": 74,
+                        "name": "DS S/D MIRTHAL"
+                    },
+                    {
+                        "id": 75,
+                        "name": "DS S/D N.JAIMAL SINGH"
+                    },
+                    {
+                        "id": 71,
+                        "name": "DS S/D NORTH PATHANKOT"
+                    },
+                    {
+                        "id": 72,
+                        "name": "DS S/D SARNA"
+                    },
+                    {
+                        "id": 70,
+                        "name": "DS S/D SOUTH PATHANKOT"
+                    },
+                    {
+                        "id": 73,
+                        "name": "DS S/D SUJANPUR"
+                    }
+                ]
+            },
+            {
+                "id": 16,
+                "name": "DS S/U DIVN. PATHANKOT",
+                "subdivisions": [
+                    {
+                        "id": 76,
+                        "name": "DS EAST S/D PATHANKOT"
+                    },
+                    {
+                        "id": 79,
+                        "name": "DS S/D DHAR"
+                    },
+                    {
+                        "id": 77,
+                        "name": "DS S/D DINA NAGAR"
+                    },
+                    {
+                        "id": 78,
+                        "name": "DS S/D PANDORI"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Patiala",
+        "divisions": [
+            {
+                "id": 59,
+                "name": "DS DIVN. AMLOH",
+                "subdivisions": [
+                    {
+                        "id": 277,
+                        "name": "DS S/D AMLOH"
+                    },
+                    {
+                        "id": 278,
+                        "name": "DS S/D BHADSON"
+                    },
+                    {
+                        "id": 279,
+                        "name": "DS S/D SHAMSHPUR"
+                    },
+                    {
+                        "id": 280,
+                        "name": "TOHRA"
+                    }
+                ]
+            },
+            {
+                "id": 61,
+                "name": "DS WEST DIVN PATIALA"
+            },
+            {
+                "id": 140,
+                "name": "DS Divn. Model Town, Patiala",
+                "subdivisions": [
+                    {
+                        "id": 285,
+                        "name": "DS CIVIL LINE TECH S/D PTA"
+                    },
+                    {
+                        "id": 289,
+                        "name": "DS EAST TECH S/D PTA"
+                    }
+                ]
+            },
+            {
+                "id": 62,
+                "name": "DS EAST DIVN PATIALA",
+                "subdivisions": [
+                    {
+                        "id": 286,
+                        "name": "DS CANTT. S/D PATIALA"
+                    },
+                    {
+                        "id": 293,
+                        "name": "DS S/D DEVIGARH"
+                    },
+                    {
+                        "id": 288,
+                        "name": "DS S/D KALYAN"
+                    },
+                    {
+                        "id": 292,
+                        "name": "DS S/D Rohar jagir"
+                    },
+                    {
+                        "id": 291,
+                        "name": "DS S/D Sanour"
+                    }
+                ]
+            },
+            {
+                "id": 63,
+                "name": "DS S/U DIVN PATIALA"
+            },
+            {
+                "id": 64,
+                "name": "DS DIVN. NABHA"
+            },
+            {
+                "id": 65,
+                "name": "DS DIVN. RAJPURA",
+                "subdivisions": [
+                    {
+                        "id": 307,
+                        "name": "DS CITY S/D RAJPURA"
+                    },
+                    {
+                        "id": 308,
+                        "name": "DS COMMERCIAL S/D RAJPURA"
+                    },
+                    {
+                        "id": 310,
+                        "name": "DS S/D GAJJUKHERA"
+                    },
+                    {
+                        "id": 309,
+                        "name": "DS S/D SARAI BANJARA"
+                    },
+                    {
+                        "id": 306,
+                        "name": "DS S/U S/D RAJPURA"
+                    }
+                ]
+            },
+            {
+                "id": 66,
+                "name": "DS DIVN. SAMANA",
+                "subdivisions": [
+                    {
+                        "id": 311,
+                        "name": "DS CITY S/D SAMANA"
+                    },
+                    {
+                        "id": 314,
+                        "name": "DS S/D BADSHAHPUR"
+                    },
+                    {
+                        "id": 313,
+                        "name": "DS S/D GAJJUMAJRA"
+                    },
+                    {
+                        "id": 312,
+                        "name": "DS S/U S/D SAMANA"
+                    }
+                ]
+            },
+            {
+                "id": 67,
+                "name": "DS DIVN. PATRAN",
+                "subdivisions": [
+                    {
+                        "id": 315,
+                        "name": "DS CITY S/D PATRAN"
+                    },
+                    {
+                        "id": 317,
+                        "name": "DS S/D KHANOURI"
+                    },
+                    {
+                        "id": 318,
+                        "name": "DS S/D SHATRANA"
+                    },
+                    {
+                        "id": 316,
+                        "name": "DS S/U S/D PATRAN"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Rupnagar",
+        "divisions": [
+            {
+                "id": 76,
+                "name": "DS DIVN. ROPAR",
+                "subdivisions": [
+                    {
+                        "id": 366,
+                        "name": "DS S/D BELA"
+                    },
+                    {
+                        "id": 362,
+                        "name": "DS S/D CHAMKAUR SAHIB"
+                    },
+                    {
+                        "id": 364,
+                        "name": "DS S/D GHANOULI"
+                    },
+                    {
+                        "id": 365,
+                        "name": "DS S/D MIANPUR"
+                    },
+                    {
+                        "id": 361,
+                        "name": "DS S/D ROPAR"
+                    },
+                    {
+                        "id": 363,
+                        "name": "DS S/D SUKHRAMPUR"
+                    }
+                ]
+            },
+            {
+                "id": 77,
+                "name": "DS DIVN.  KHARAR",
+                "subdivisions": [
+                    {
+                        "id": 367,
+                        "name": "DS S/D CITY KHARAR"
+                    },
+                    {
+                        "id": 369,
+                        "name": "DS S/D CITY MORINDA"
+                    },
+                    {
+                        "id": 853,
+                        "name": "DS S/D CITY-2 KHARAR"
+                    },
+                    {
+                        "id": 371,
+                        "name": "DS S/D KURALI"
+                    },
+                    {
+                        "id": 372,
+                        "name": "DS S/D MAJRA"
+                    },
+                    {
+                        "id": 368,
+                        "name": "DS S/U S/D KHARAR"
+                    },
+                    {
+                        "id": 370,
+                        "name": "DS S/U S/D MORINDA"
+                    },
+                    {
+                        "id": 492,
+                        "name": "SUB OFFICE GHARUAN"
+                    }
+                ]
+            },
+            {
+                "id": 78,
+                "name": "DS DIVN. ANANDPUR SAHIB",
+                "subdivisions": [
+                    {
+                        "id": 373,
+                        "name": "DS S/D ANANDPUR SAHIB"
+                    },
+                    {
+                        "id": 489,
+                        "name": "DS S/D Bhallan"
+                    },
+                    {
+                        "id": 490,
+                        "name": "DS S/D Bhanaupli"
+                    },
+                    {
+                        "id": 376,
+                        "name": "DS S/D KIRATPUR SAHIB"
+                    },
+                    {
+                        "id": 374,
+                        "name": "DS S/D NANGAL"
+                    },
+                    {
+                        "id": 375,
+                        "name": "DS S/D NURPUR BEDI"
+                    },
+                    {
+                        "id": 491,
+                        "name": "SUB OFFICE TAKHATGARH"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Sangrur",
+        "divisions": [
+            {
+                "id": 67,
+                "name": "DS DIVN. PATRAN",
+                "subdivisions": [
+                    {
+                        "id": 315,
+                        "name": "DS CITY S/D PATRAN"
+                    },
+                    {
+                        "id": 317,
+                        "name": "DS S/D KHANOURI"
+                    },
+                    {
+                        "id": 318,
+                        "name": "DS S/D SHATRANA"
+                    },
+                    {
+                        "id": 316,
+                        "name": "DS S/U S/D PATRAN"
+                    }
+                ]
+            },
+            {
+                "id": 68,
+                "name": "DS DIVN. SANGRUR",
+                "subdivisions": [
+                    {
+                        "id": 319,
+                        "name": "DS CITY S/D SANGRUR"
+                    },
+                    {
+                        "id": 321,
+                        "name": "DS S/D BADRUKHAN"
+                    },
+                    {
+                        "id": 322,
+                        "name": "DS S/D BHAWANIGARH"
+                    },
+                    {
+                        "id": 323,
+                        "name": "DS S/D GHRACHON"
+                    },
+                    {
+                        "id": 320,
+                        "name": "DS S/U S/D SANGRUR"
+                    }
+                ]
+            },
+            {
+                "id": 69,
+                "name": "DS CITY DIVN. SUNAM",
+                "subdivisions": [
+                    {
+                        "id": 324,
+                        "name": "DS CITY S/D SUNAM"
+                    },
+                    {
+                        "id": 326,
+                        "name": "DS S/D CHEEMA"
+                    },
+                    {
+                        "id": 325,
+                        "name": "DS S/D LONGOWAL"
+                    },
+                    {
+                        "id": 327,
+                        "name": "DS S/D UBHEWAL"
+                    },
+                    {
+                        "id": 328,
+                        "name": "DS S/U S/D SUNAM"
+                    }
+                ]
+            },
+            {
+                "id": 70,
+                "name": "DS S/U DIVN. SUNAM (Lehragaga)",
+                "subdivisions": [
+                    {
+                        "id": 329,
+                        "name": "DS CITY S/D LEHRAGAGA"
+                    },
+                    {
+                        "id": 332,
+                        "name": "DS S/D BANGAN"
+                    },
+                    {
+                        "id": 331,
+                        "name": "DS S/D MOONAK"
+                    },
+                    {
+                        "id": 330,
+                        "name": "DS S/U S/D LEHRAGAGA"
+                    }
+                ]
+            },
+            {
+                "id": 71,
+                "name": "DS DIVN. DIRBA",
+                "subdivisions": [
+                    {
+                        "id": 333,
+                        "name": "DS CITY S/D DIRBA"
+                    },
+                    {
+                        "id": 335,
+                        "name": "DS S/D MEHLAN"
+                    },
+                    {
+                        "id": 336,
+                        "name": "DS S/D NADAMPUR"
+                    },
+                    {
+                        "id": 334,
+                        "name": "DS S/U S/D DIRBA"
+                    }
+                ]
+            },
+            {
+                "id": 75,
+                "name": "DS DIVN. DHURI",
+                "subdivisions": [
+                    {
+                        "id": 355,
+                        "name": "DS CITY S/D DHURI"
+                    },
+                    {
+                        "id": 359,
+                        "name": "DS S/D BHALWAN"
+                    },
+                    {
+                        "id": 948,
+                        "name": "DS S/D Kanjhla"
+                    },
+                    {
+                        "id": 357,
+                        "name": "DS S/D NO-1 SHERPUR"
+                    },
+                    {
+                        "id": 358,
+                        "name": "DS S/D NO. 2 SHERPUR"
+                    },
+                    {
+                        "id": 360,
+                        "name": "DS S/D RANGIAN"
+                    },
+                    {
+                        "id": 356,
+                        "name": "DS S/U S/D DHURI"
+                    },
+                    {
+                        "id": 947,
+                        "name": "DS Sub Office Balian"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "name": "SBS Nagar",
+        "divisions": [
+            {
+                "id": 38,
+                "name": "DS DIVN. NAWANSHAHR",
+                "subdivisions": [
+                    {
+                        "id": 192,
+                        "name": "DS S/D AUR"
+                    },
+                    {
+                        "id": 189,
+                        "name": "DS S/D CITY NAWANSHAHR"
+                    },
+                    {
+                        "id": 193,
+                        "name": "DS S/D JADLA"
+                    },
+                    {
+                        "id": 191,
+                        "name": "DS S/D RAHON"
+                    },
+                    {
+                        "id": 190,
+                        "name": "DS S/U S/D NAWANSHAHR"
+                    }
+                ]
+            },
+            {
+                "id": 40,
+                "name": "DS DIVN. GARHSHANKAR",
+                "subdivisions": [
+                    {
+                        "id": 199,
+                        "name": "DS S/D CITY GARHSHANKAR"
+                    },
+                    {
+                        "id": 201,
+                        "name": "DS S/D CITY-1 BALACHAUR"
+                    },
+                    {
+                        "id": 202,
+                        "name": "DS S/D CITY-2 BALACHAUR"
+                    },
+                    {
+                        "id": 203,
+                        "name": "DS S/D SAROYA"
+                    },
+                    {
+                        "id": 200,
+                        "name": "DS S/U S/D GARHSHANKAR"
+                    },
+                    {
+                        "id": 496,
+                        "name": "SUB OFFICE BINEWAL"
+                    }
+                ]
+            },
+            {
+                "id": 41,
+                "name": "DS DIVN. BANGA",
+                "subdivisions": [
+                    {
+                        "id": 206,
+                        "name": "DS S/D BEHRAM NO 1"
+                    },
+                    {
+                        "id": 207,
+                        "name": "DS S/D BEHRAM NO 2"
+                    },
+                    {
+                        "id": 204,
+                        "name": "DS S/D CITY BANGA"
+                    },
+                    {
+                        "id": 208,
+                        "name": "DS S/D MUKANDPUR"
+                    },
+                    {
+                        "id": 205,
+                        "name": "DS S/U S/D BANGA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Sri Muktsar Sahib",
+        "divisions": [
+            {
+                "id": 98,
+                "name": "DS DIVN. MUKTSAR",
+                "subdivisions": [
+                    {
+                        "id": 463,
+                        "name": "DS CITY S/D MUKTSAR"
+                    },
+                    {
+                        "id": 468,
+                        "name": "DS S/D BARIWALA"
+                    },
+                    {
+                        "id": 465,
+                        "name": "DS S/D FATTANWALA"
+                    },
+                    {
+                        "id": 466,
+                        "name": "DS S/D LUBANIAWALI"
+                    },
+                    {
+                        "id": 467,
+                        "name": "DS S/D RUPANA"
+                    },
+                    {
+                        "id": 464,
+                        "name": "DS S/U S/D MUKTSAR"
+                    },
+                    {
+                        "id": 502,
+                        "name": "Sub Office Lakhewali"
+                    }
+                ]
+            },
+            {
+                "id": 99,
+                "name": "DS DIVN. MALOUT",
+                "subdivisions": [
+                    {
+                        "id": 469,
+                        "name": "DS CITY S/D MALOUT"
+                    },
+                    {
+                        "id": 472,
+                        "name": "DS S/D ABUL KHURANA"
+                    },
+                    {
+                        "id": 471,
+                        "name": "DS S/D ARNIWALA"
+                    },
+                    {
+                        "id": 470,
+                        "name": "DS S/U S/D MALOUT"
+                    }
+                ]
+            },
+            {
+                "id": 100,
+                "name": "DS DIVN. GIDDARBAHA",
+                "subdivisions": [
+                    {
+                        "id": 473,
+                        "name": "DS CITY S/D GIDDARBAHA"
+                    },
+                    {
+                        "id": 475,
+                        "name": "DS S/D DODA"
+                    },
+                    {
+                        "id": 474,
+                        "name": "DS S/U S/D GIDDARBAHA"
+                    }
+                ]
+            },
+            {
+                "id": 101,
+                "name": "DS DIVN. BADAL",
+                "subdivisions": [
+                    {
+                        "id": 476,
+                        "name": "DS S/D BADAL"
+                    },
+                    {
+                        "id": 478,
+                        "name": "DS S/D DABWALI"
+                    },
+                    {
+                        "id": 477,
+                        "name": "DS S/D LAMBI"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "name": "Tarn Taran Sahib",
+        "divisions": [
+            {
+                "id": 17,
+                "name": "DS CITY DIVN. TARN TARAN",
+                "subdivisions": [
+                    {
+                        "id": 80,
+                        "name": "DS CITY S/D TARN TARAN"
+                    },
+                    {
+                        "id": 85,
+                        "name": "DS S/D CHABAL"
+                    },
+                    {
+                        "id": 81,
+                        "name": "DS S/D GOHALWAR"
+                    },
+                    {
+                        "id": 82,
+                        "name": "DS S/D MANOCHAHAL"
+                    },
+                    {
+                        "id": 84,
+                        "name": "DS S/D SARAI AMANT KHAN"
+                    },
+                    {
+                        "id": 83,
+                        "name": "DS S/D SUR SINGH"
+                    }
+                ]
+            },
+            {
+                "id": 18,
+                "name": "DS S/U DIVN. TARN TARAN",
+                "subdivisions": [
+                    {
+                        "id": 87,
+                        "name": "DS S/D FATEHABAD"
+                    },
+                    {
+                        "id": 89,
+                        "name": "DS S/D KHADOOR SAHIB"
+                    },
+                    {
+                        "id": 88,
+                        "name": "DS S/D NAUSHERA PANNUA"
+                    },
+                    {
+                        "id": 86,
+                        "name": "DS S/D S/U TARN TARAN"
+                    }
+                ]
+            },
+            {
+                "id": 19,
+                "name": "DS DIVN. RAYYA AT BEAS",
+                "subdivisions": [
+                    {
+                        "id": 91,
+                        "name": "DS S/D BABA BAKALA"
+                    },
+                    {
+                        "id": 94,
+                        "name": "DS S/D BEAS"
+                    },
+                    {
+                        "id": 95,
+                        "name": "DS S/D BUTARI"
+                    },
+                    {
+                        "id": 93,
+                        "name": "DS S/D MEHTA CHOWK"
+                    },
+                    {
+                        "id": 92,
+                        "name": "DS S/D NAGOKE"
+                    },
+                    {
+                        "id": 90,
+                        "name": "DS S/D RAYYA"
+                    }
+                ]
+            },
+            {
+                "id": 20,
+                "name": "DS DIVN. PATTI",
+                "subdivisions": [
+                    {
+                        "id": 96,
+                        "name": "DS CITY S/D PATTI"
+                    },
+                    {
+                        "id": 98,
+                        "name": "DS S/D HARIKE"
+                    },
+                    {
+                        "id": 100,
+                        "name": "DS S/D KAIRON"
+                    },
+                    {
+                        "id": 99,
+                        "name": "DS S/D SARHALI"
+                    },
+                    {
+                        "id": 97,
+                        "name": "DS S/U S/D PATTI"
+                    }
+                ]
+            },
+            {
+                "id": 21,
+                "name": "DS DIVN. BHIKHIWIND",
+                "subdivisions": [
+                    {
+                        "id": 102,
+                        "name": "DS S/D AMARKOT"
+                    },
+                    {
+                        "id": 101,
+                        "name": "DS S/D BHIKHIWIND"
+                    },
+                    {
+                        "id": 103,
+                        "name": "DS S/D KHALRA"
+                    },
+                    {
+                        "id": 104,
+                        "name": "DS S/D KHEMKARAN"
+                    }
+                ]
+            }
+        ]
+    }
+]
