@@ -6,6 +6,7 @@ import District from '../components/District';
 import Division from '../components/Division';
 import SubDivision from '../components/SubDivision';
 import Typewriter from '../components/Typewriter';
+import PowerStats from '../components/PowerStats';
 
 const customStyles = {
     control: (provided, state) => ({
@@ -308,6 +309,10 @@ const Home = () => {
                 )}
 
             </div>
+
+            {/* <PowerStats /> */}
+            <PowerStats selectedDistrict={selectedDistrict?.label} />
+
 
         </div>
     )
