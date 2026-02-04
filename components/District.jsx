@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
 import Select from 'react-select';
 
-function District({ customStyles, districts, setDistricts, getData, selectedDistrict, setSelectedDistrict }) {
+function District({ customStyles, districts, setDistricts, getData, selectedDistrict, setSelectedDistrict, navigate, toSlug, districtPlaceholder, setDistrictPlaceholder }) {
 
   // const [districts, setDistricts] = useState([])
 
@@ -11,13 +11,15 @@ function District({ customStyles, districts, setDistricts, getData, selectedDist
     : [];
 
   const fetchDistricts = async () => {
+    setDistrictPlaceholder('Loading districts...');
     axios.get('https://backend-pspcl-power-supply-check.onrender.com/').then(response => {
       console.log(response.data);
-      setDistricts(response.data)
+      setDistricts(response.data);
+      setDistrictPlaceholder('Select your district');
     })
       .catch(error => {
         console.error('Error fetching districts:', error);
-
+        setDistrictPlaceholder('Error loading districts');
       })
   }
 
@@ -39,8 +41,14 @@ function District({ customStyles, districts, setDistricts, getData, selectedDist
         <h2 className='gap-4 text-2xl m-3 font-bold text-center'> Select District</h2>
         <Select className='bg-yellow-200 rounded-2xl p-1 text-black' onChange={(option) => {
           setSelectedDistrict(option);
-          getData('div', option.value);
-        }} id="district" options={districtOptions} placeholder="Select your district" isClearable value={selectedDistrict} styles={customStyles} />
+          if (option) {
+            navigate(`/${toSlug(option.label)}`);
+            getData('div', option.value);
+          } else {
+            // Clear selection - navigate to home
+            navigate('/');
+          }
+        }} id="district" options={districtOptions} placeholder={districtPlaceholder} isClearable value={selectedDistrict} styles={customStyles} />
 
       </div>
 

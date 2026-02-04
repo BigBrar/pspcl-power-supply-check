@@ -1,12 +1,16 @@
 import React from 'react'
 import axios from 'axios';
 import { useRef, useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router';
 
 import District from '../components/District';
 import Division from '../components/Division';
 import SubDivision from '../components/SubDivision';
 import Typewriter from '../components/Typewriter';
 import PowerStats from '../components/PowerStats';
+import SEOHead from '../components/SEOHead';
+import SemanticContent from '../components/SemanticContent';
+import FAQSection from '../components/FAQSection';
 
 const customStyles = {
     control: (provided, state) => ({
@@ -81,6 +85,10 @@ const customStyles = {
 };
 
 const Home = () => {
+    // React Router hooks
+    const { route_district, route_division, route_subdivision } = useParams();
+    const navigate = useNavigate();
+
     const [districts, setDistricts] = useState([])
     const [divisions, setDivisions] = useState([])
     const [subdivisions, setSubDivisions] = useState([])
@@ -93,8 +101,12 @@ const Home = () => {
     const [selectedSubDivision, setSelectedSubDivision] = useState(null);
 
     // useStates to control the placeholder text for select tags
+    const [districtPlaceholder, setDistrictPlaceholder] = useState('Loading districts...');
     const [divisionPlaceholder, setDivisionPlaceholder] = useState('Select district first');
     const [subDivisionPlaceholder, setSubDivisionPlaceholder] = useState('Select division first');
+
+    // useRef to prevent duplicate supply fetches
+    const lastFetchedSupplyId = useRef(null);
 
     // useEffect(() => {
     // setDivisions([]);
@@ -119,47 +131,190 @@ const Home = () => {
         }
     }, [])
 
+    // Route-to-State Synchronization (District Level)
     useEffect(() => {
-        console.log('second useEffect triggered');
+        if (districts.length === 0) return;
 
+        console.log('Route sync useEffect triggered');
+        console.log('Route params:', { route_district, route_division, route_subdivision });
         console.log('Districts:', districts);
-        console.log('Divisions:', divisions);
-        console.log('Subdivisions:', subdivisions);
 
-        if (localStorage.getItem('selectedDistrict')) {
+        // CASE 1: Route exists - Route takes priority
+        if (route_district) {
+            const districtObj = districts.find(d => toSlug(d.name) === route_district);
+
+            if (districtObj) {
+                console.log('Matched district from route:', districtObj.name);
+                setSelectedDistrict({ value: districtObj.id, label: districtObj.name });
+
+                // Check if cache has divisions for this district
+                const cacheDistrictId = Number(localStorage.getItem('selectedDistrict'));
+                const cachedDivisions = JSON.parse(localStorage.getItem('divisions')) || [];
+
+                // VALIDATE CACHE: If route wants a specific division, cache MUST have it
+                let isCacheValid = cacheDistrictId === districtObj.id && cachedDivisions.length > 0;
+
+                if (isCacheValid && route_division) {
+                    const cachedMatch = cachedDivisions.find(d => toSlug(d.label) === route_division);
+                    if (!cachedMatch) {
+                        console.log('Cache mismatch: Route division not found in stored divisions. Fetching fresh.');
+                        isCacheValid = false;
+                    }
+                }
+
+                if (isCacheValid) {
+                    // Use cached divisions instead of fetching
+                    console.log('Using cached divisions for this district');
+                    setDivisions(cachedDivisions);
+                } else {
+                    // Fetch divisions for this district
+                    console.log('Fetching divisions for', districtObj.name);
+                    getData('div', districtObj.id);
+                }
+            } else {
+                // Invalid district in route - redirect to home
+                console.log('Invalid district in route, redirecting to /');
+                navigate('/');
+            }
+        }
+        // CASE 2: No route but cache exists - Build URL from cache and navigate
+        else if (localStorage.getItem('selectedDistrict')) {
             const cacheDistrict = Number(localStorage.getItem('selectedDistrict'));
             const cacheDivision = Number(localStorage.getItem('selectedDivision'));
             const cacheSubdivision = Number(localStorage.getItem('selectedSubDivision'));
 
-            // Districts from backend have id & name
             const districtObj = districts.find(d => d.id === cacheDistrict);
-            setSelectedDistrict(
-                districtObj ? { value: districtObj.id, label: districtObj.name } : null
-            );
-            console.log(districtObj ? districtObj.name : 'District not found');
 
-            // Divisions/subdivisions are already value/label
-            const divisionObj = divisions.find(d => d.value === cacheDivision);
-            setSelectedDivision(divisionObj || null);
-            console.log(divisionObj ? divisionObj.label : 'Division not found');
+            if (districtObj) {
+                console.log('Building URL from cache for:', districtObj.name);
 
-            const subDivisionObj = subdivisions.find(d => d.value === cacheSubdivision);
-            setSelectedSubDivision(subDivisionObj || null);
-            console.log(subDivisionObj ? subDivisionObj.label : 'Subdivision not found');
+                // Get cached lists to build URL (but don't set state yet)
+                const cachedDivisions = JSON.parse(localStorage.getItem('divisions')) || [];
+                const cachedSubdivisions = JSON.parse(localStorage.getItem('subdivisions')) || [];
+
+                const divisionObj = cachedDivisions.find(d => d.value === cacheDivision);
+                const subdivisionObj = cachedSubdivisions.find(d => d.value === cacheSubdivision);
+
+                // Build URL path from cache
+                let urlPath = `/${toSlug(districtObj.name)}`;
+                if (divisionObj) {
+                    urlPath += `/${toSlug(divisionObj.label)}`;
+                }
+                if (subdivisionObj) {
+                    urlPath += `/${toSlug(subdivisionObj.label)}`;
+                }
+
+                console.log('Navigating to cached path:', urlPath);
+                // Navigate and let the route-based logic handle the rest
+                navigate(urlPath, { replace: true });
+            }
         }
-    }, [districts]);
+    }, [districts, route_district]);
 
 
+    // Route-to-State Synchronization (Division Level)
     useEffect(() => {
+        // Only proceed if we have a route_division to match
+        if (!route_division || divisions.length === 0) return;
+
+        console.log('Division route sync triggered');
+        console.log('Matching route_division:', route_division);
+        console.log('Available divisions:', divisions);
+
+        const divisionObj = divisions.find(d => toSlug(d.label) === route_division);
+
+        if (divisionObj) {
+            console.log('Matched division from route:', divisionObj.label);
+            setSelectedDivision(divisionObj);
+
+            // Check if cache has subdivisions for this division
+            const cacheDivisionId = Number(localStorage.getItem('selectedDivision'));
+            const cachedSubdivisions = JSON.parse(localStorage.getItem('subdivisions')) || [];
+
+            // VALIDATE CACHE: If route wants a specific subdivision, cache MUST have it
+            let isCacheValid = cacheDivisionId === divisionObj.value && cachedSubdivisions.length > 0;
+
+            if (isCacheValid && route_subdivision) {
+                const cachedMatch = cachedSubdivisions.find(d => toSlug(d.label) === route_subdivision);
+                if (!cachedMatch) {
+                    console.log('Cache mismatch: Route subdivision not found in stored subdivisions. Fetching fresh.');
+                    isCacheValid = false;
+                }
+            }
+
+            if (isCacheValid) {
+                // Use cached subdivisions instead of fetching
+                console.log('Using cached subdivisions for this division');
+                setSubDivisions(cachedSubdivisions);
+            } else {
+                // Fetch subdivisions for this division
+                console.log('Fetching subdivisions for', divisionObj.label);
+                getData('subdiv', divisionObj.value);
+            }
+        } else {
+            // Invalid division in route - redirect to district only
+            console.log('Invalid division in route, redirecting to district');
+            if (selectedDistrict) {
+                navigate(`/${toSlug(selectedDistrict.label)}`);
+            }
+        }
+    }, [divisions, route_division]);
+
+    // Route-to-State Synchronization (Subdivision Level)
+    useEffect(() => {
+        // Only proceed if we have a route_subdivision to match
+        if (!route_subdivision || subdivisions.length === 0) return;
+
+        console.log('Subdivision route sync triggered');
+        console.log('Matching route_subdivision:', route_subdivision);
+        console.log('Available subdivisions:', subdivisions);
+
+        const subdivisionObj = subdivisions.find(d => toSlug(d.label) === route_subdivision);
+
+        if (subdivisionObj) {
+            console.log('Matched subdivision from route:', subdivisionObj.label);
+            setSelectedSubDivision(subdivisionObj);
+
+            // Only fetch if we haven't already fetched for this subdivision
+            if (lastFetchedSupplyId.current !== subdivisionObj.value) {
+                console.log('Fetching supply status for', subdivisionObj.label);
+                lastFetchedSupplyId.current = subdivisionObj.value;
+                getData('supply', subdivisionObj.value);
+            } else {
+                console.log('Supply already fetched for', subdivisionObj.label);
+            }
+        } else {
+            // Invalid subdivision in route - redirect to district/division
+            console.log('Invalid subdivision in route, redirecting to district/division');
+            if (selectedDistrict && selectedDivision) {
+                navigate(`/${toSlug(selectedDistrict.label)}/${toSlug(selectedDivision.label)}`);
+            }
+        }
+    }, [subdivisions, route_subdivision]);
+
+    // Auto-fetch supply status when subdivision is selected (for cache restoration scenario)
+    useEffect(() => {
+        // Skip if we're in a route-driven flow (route_subdivision exists means the above useEffect handles it)
+        if (route_subdivision) return;
+
         if (selectedSubDivision && selectedSubDivision.value) {
-            console.log('Fetching supply status for cached subdivision...');
+            console.log('Fetching supply status for selected subdivision...');
             getData('supply', selectedSubDivision.value);
         }
     }, [selectedSubDivision]);
 
 
-
-
+    // function to handle route naming, converting everything to '-'
+    const toSlug = (text) => {
+        return text
+            ?.toString()
+            .toLowerCase()
+            .replace(/\//g, '-')       // 1. Specifically turn / into -
+            .replace(/[^a-z0-9 -]/g, '') // 2. Remove dots, commas, etc (like S/D. becomes sd)
+            .trim()
+            .replace(/\s+/g, '-')      // 3. Turn spaces into -
+            .replace(/-+/g, '-');      // 4. Remove double dashes (-- becomes -)
+    };
 
 
     const getData = (mode, Id) => {
@@ -242,6 +397,18 @@ const Home = () => {
     }
     return (
         <div className='mt-8 text-center'>
+            {/* SEO and Semantic Components */}
+            <SEOHead
+                district={selectedDistrict}
+                division={selectedDivision}
+                subdivision={selectedSubDivision}
+            />
+            <SemanticContent
+                district={selectedDistrict}
+                division={selectedDivision}
+                subdivision={selectedSubDivision}
+            />
+
             <div className='text-lg font-medium text-amber-400 opacity-90 tracking-wide h-8 flex justify-center items-center'>
                 <Typewriter
                     phrases={[
@@ -258,16 +425,16 @@ const Home = () => {
 
 
                 {/* SELECTING DISTRICT */}
-                <District setSelectedDistrict={setSelectedDistrict} selectedDistrict={selectedDistrict} customStyles={customStyles} setDistricts={setDistricts} districts={districts} getData={getData} />
+                <District setSelectedDistrict={setSelectedDistrict} selectedDistrict={selectedDistrict} customStyles={customStyles} setDistricts={setDistricts} districts={districts} getData={getData} navigate={navigate} toSlug={toSlug} districtPlaceholder={districtPlaceholder} setDistrictPlaceholder={setDistrictPlaceholder} />
 
 
                 {/* SELECTING DIVISION */}
-                <Division divisionPlaceholder={divisionPlaceholder} selectedDivision={selectedDivision} setSelectedDivision={setSelectedDivision} customStyles={customStyles} getData={getData} divisions={divisions} />
+                <Division divisionPlaceholder={divisionPlaceholder} selectedDivision={selectedDivision} setSelectedDivision={setSelectedDivision} customStyles={customStyles} getData={getData} divisions={divisions} navigate={navigate} toSlug={toSlug} selectedDistrict={selectedDistrict} />
 
 
 
                 {/* SELECTING SUBDIVISION */}
-                <SubDivision subDivisionPlaceholder={subDivisionPlaceholder} selectedSubDivision={selectedSubDivision} setSubDivision={setSelectedSubDivision} customStyles={customStyles} subdivisions={subdivisions} getData={getData} />
+                <SubDivision subDivisionPlaceholder={subDivisionPlaceholder} selectedSubDivision={selectedSubDivision} setSubDivision={setSelectedSubDivision} customStyles={customStyles} subdivisions={subdivisions} getData={getData} navigate={navigate} toSlug={toSlug} selectedDistrict={selectedDistrict} selectedDivision={selectedDivision} />
 
 
                 {/* SUPPLY STATUS */}
@@ -281,6 +448,8 @@ const Home = () => {
                         ⚡ Checking live grid status...
                     </p>
                 )}
+
+
 
                 {/* OK STATUS */}
                 {!isLoading && supplyStatus?.type === 'ok' && (
@@ -312,6 +481,13 @@ const Home = () => {
 
             {/* <PowerStats /> */}
             <PowerStats selectedDistrict={selectedDistrict?.label} />
+
+            {/* FAQ SECTION */}
+            <FAQSection
+                district={selectedDistrict}
+                division={selectedDivision}
+                subdivision={selectedSubDivision}
+            />
 
 
         </div>
