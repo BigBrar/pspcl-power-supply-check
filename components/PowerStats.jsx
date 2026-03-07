@@ -66,13 +66,42 @@ const PowerStats = () => {
                 })
 
                 // Duration Calculation
-                const durations = currentCuts.map(r => {
+                const uniqueOutagesMap = new Map();
+
+                currentCuts.forEach(r => {
                     const s = parseDate(r.start_time);
                     const e = parseDate(r.end_time);
-                    return (s && e) ? (e - s) / (1000 * 60) : null;
-                }).filter(v => v !== null && v > 0);
+                    if (s && e) {
+                        const duration = (e - s) / (1000 * 60);
+                        if (duration > 0 && duration < 48 * 60) {
+                            const type = (r.outage_type || '').toLowerCase();
+                            const isUnplanned = type.includes('unplanned') || type.includes('breakdown');
+                            const key = `${r.subdivision_id}-${s.getTime()}`;
+                            if (!uniqueOutagesMap.has(key)) {
+                                uniqueOutagesMap.set(key, {
+                                    id: key,
+                                    duration,
+                                    isUnplanned,
+                                    subdivisionName: districtMap[r.subdivision_id] || r.subdivision || 'Unknown Area'
+                                });
+                            }
+                        }
+                    }
+                });
 
-                const avgDuration = durations.length ? Math.round(durations.reduce((a, b) => a + b, 0) / durations.length) : 0
+                const uniqueOutages = Array.from(uniqueOutagesMap.values());
+                const unplannedDurations = uniqueOutages.filter(o => o.isUnplanned).map(o => o.duration).sort((a,b) => a-b);
+                const plannedDurations = uniqueOutages.filter(o => !o.isUnplanned).map(o => o.duration).sort((a,b) => a-b);
+
+                const getMedian = (arr) => {
+                    if (arr.length === 0) return 0;
+                    const mid = Math.floor(arr.length / 2);
+                    return arr.length % 2 !== 0 ? arr[mid] : (arr[mid - 1] + arr[mid]) / 2;
+                };
+
+                const avgUnplanned = Math.round(getMedian(unplannedDurations));
+                const avgPlanned = Math.round(getMedian(plannedDurations));
+                const longestOutages = [...uniqueOutages].sort((a, b) => b.duration - a.duration).slice(0, 5);
 
                 // District Reliability
                 const distStats = {}
@@ -94,7 +123,9 @@ const PowerStats = () => {
                     cutTrend: currentCuts.length - prevCuts.length,
                     avgWind: avgWind.toFixed(1),
                     avgTemp: Math.round(avgTemp),
-                    avgDuration,
+                    avgUnplanned,
+                    avgPlanned,
+                    longestOutages,
                     outageTypes: types,
                     topDistricts: districtReliability.slice(0, 3),
                     bottomDistricts: districtReliability.slice(-3).reverse(),
@@ -150,10 +181,28 @@ const PowerStats = () => {
                     title="Active Outages" value={stats.totalCuts} unit="Subdivisions"
                     trend={stats.cutTrend} icon="⚡"
                 />
-                <StatCard
-                    title="Avg Restoration" value={stats.avgDuration} unit="Mins"
-                    icon="🕒"
-                />
+                <div className="bg-yellow-50 border-2 border-yellow-200 p-6 rounded-[2rem] shadow-sm relative overflow-hidden group">
+                    <div className="flex justify-between items-start mb-3">
+                        <span className="text-3xl grayscale group-hover:grayscale-0 transition-all">🕒</span>
+                    </div>
+                    <p className="text-[10px] font-black text-amber-800 uppercase tracking-widest mb-3">Avg Restoration</p>
+                    <div className="flex flex-col gap-2">
+                        <div className="flex items-center justify-between border-b border-yellow-200 pb-2">
+                            <span className="text-[10px] font-bold text-red-500 uppercase tracking-wider">Unplanned</span>
+                            <div className="flex items-baseline gap-1">
+                                <h4 className="text-2xl font-black text-gray-900 leading-none">{stats.avgUnplanned}</h4>
+                                <span className="text-[10px] font-bold text-gray-400">MINS</span>
+                            </div>
+                        </div>
+                        <div className="flex items-center justify-between">
+                            <span className="text-[10px] font-bold text-amber-600 uppercase tracking-wider">Planned</span>
+                            <div className="flex items-baseline gap-1">
+                                <h4 className="text-2xl font-black text-gray-900 leading-none">{stats.avgPlanned}</h4>
+                                <span className="text-[10px] font-bold text-gray-400">MINS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <StatCard
                     title="Weather Impact" value={`${stats.avgWind} km/h`}
                     subtitle={`${stats.avgTemp}°C Avg Temp`} icon="🌪️"
@@ -198,6 +247,7 @@ const PowerStats = () => {
                     </div>
                 </div>
             </div>
+
         </div>
     )
 }
